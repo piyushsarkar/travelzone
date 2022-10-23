@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TravelZone</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow sticky-top"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <span class="logo-1">Travel</span><span class="logo-2">Zone</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="destination.html">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blogs.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/s1.jpg" alt="Goa" class="d-block w-100" />
+          <div class="carousel-caption d-none d-md-block">
+            <h3 class="display-5 fw-bold">Goa</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/s2.jpg" alt="Nanital" class="d-block w-100" />
+          <div class="carousel-caption d-none d-md-block">
+            <h3 class="display-5 fw-bold">Nainital</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/s3.jpg" alt="Shimla" class="d-block w-100" />
+          <div class="carousel-caption d-none d-md-block">
+            <h3 class="display-5 fw-bold">Shimla</h3>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <section class="package">
+      <div class="container">
+        <h1 class="text-center py-4">Choose Your Destination</h1>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+          <div class="col">
+            <div class="card">
+              <div class="photo">
+                <img src="images/goa.jpg" class="card-img-top" alt="..." />
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  <a
+                    href="destination/goa.html"
+                    class="card-link stretched-link"
+                    >Goa</a
+                  >
+                </h5>
+                <div class="card-details">
+                  <i class="fas fa-rupee-sign"></i> <span>9,580</span>
+                </div>
+                <div class="card-details">
+                  <i class="fa fa-stars"></i> <span>4.9</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="photo">
+                <img src="images/andaman.jpg" class="card-img-top" alt="..." />
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  <a
+                    href="destination/andaman.html"
+                    class="card-link stretched-link"
+                    >Andaman & Nicobar</a
+                  >
+                </h5>
+                <div class="card-details">
+                  <i class="fas fa-rupee-sign"></i> <span>7,027</span>
+                </div>
+                <div class="card-details">
+                  <i class="fa fa-stars"></i> <span>4.5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="photo">
+                <img src="images/manali.jpg" class="card-img-top" alt="..." />
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  <a
+                    href="destination/manali.html"
+                    class="card-link stretched-link"
+                    >Manali</a
+                  >
+                </h5>
+                <div class="card-details">
+                  <i class="fas fa-rupee-sign"></i> <span>8,999</span>
+                </div>
+                <div class="card-details">
+                  <i class="fa fa-stars"></i> <span>4.5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="photo">
+                <img src="images/ladakh.jpg" class="card-img-top" alt="..." />
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  <a
+                    href="destination/ladakh.html"
+                    class="card-link stretched-link"
+                    >Leh Ladakh</a
+                  >
+                </h5>
+                <div class="card-details">
+                  <i class="fas fa-rupee-sign"></i> <span>7,500</span>
+                </div>
+                <div class="card-details">
+                  <i class="fa fa-stars"></i> <span>4.5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="photo">
+                <img src="images/udaipur.jpg" class="card-img-top" alt="..." />
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  <a
+                    href="destination/udaipur.html"
+                    class="card-link stretched-link"
+                    >Udaipur</a
+                  >
+                </h5>
+                <div class="card-details">
+                  <i class="fas fa-rupee-sign"></i> <span>5,228</span>
+                </div>
+                <div class="card-details">
+                  <i class="fa fa-stars"></i> <span>4.5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="photo">
+                <img src="images/srinagar.jpg" class="card-img-top" alt="..." />
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  <a
+                    href="destination/srinagar.html"
+                    class="card-link stretched-link"
+                    >Srinagar</a
+                  >
+                </h5>
+                <div class="card-details">
+                  <i class="fas fa-rupee-sign"></i> <span>4,514</span>
+                </div>
+                <div class="card-details">
+                  <i class="fa fa-stars"></i> <span>4.5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="photo">
+                <img src="images/nainital.jpg" class="card-img-top" alt="..." />
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  <a
+                    href="destination/nainital.html"
+                    class="card-link stretched-link"
+                    >Nainital</a
+                  >
+                </h5>
+                <div class="card-details">
+                  <i class="fas fa-rupee-sign"></i> <span>6,088</span>
+                </div>
+                <div class="card-details">
+                  <i class="fa fa-stars"></i> <span>4.5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="photo">
+                <img src="images/shimla.jpg" class="card-img-top" alt="..." />
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  <a
+                    href="destination/shimla.html"
+                    class="card-link stretched-link"
+                    >Shimla</a
+                  >
+                </h5>
+                <div class="card-details">
+                  <i class="fas fa-rupee-sign"></i> <span>4,500</span>
+                </div>
+                <div class="card-details">
+                  <i class="fa fa-stars"></i> <span>4.5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why_section">
+      <div class="container">
+        <h1 class="text-center py-4">Why TravelZone</h1>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+          <div class="col">
+            <div class="card text-white bg-secondary mb-3 p-4">
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-center">
+                  <i class="fas fa-user-alt fa-4x"></i>
+                </h5>
+                <p class="card-text text-center">2000+ Our worldwide guide</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-white bg-secondary mb-3 p-4">
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-center">
+                  <i class="fas fa-handshake fa-4x"></i>
+                </h5>
+                <p class="card-text text-center">100% trusted travel agency</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-white bg-secondary mb-3 p-4">
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-center">
+                  <i class="fas fa-users fa-4x"></i>
+                </h5>
+                <p class="card-text text-center">
+                  10+ year of travel experience
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-white bg-secondary mb-3 p-4">
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-center">
+                  <i class="fas fa-laugh-beam fa-4x"></i>
+                </h5>
+                <p class="card-text text-center">90% of our traveller happy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="container">
+        <h1 class="text-center py-4">Gallery</h1>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-12 pb-4">
+            <img src="images/21.jpg" class="img-fluid rounded" />
+          </div>
+          <div class="col-lg-4 col-md-4 col-12 pb-4">
+            <img src="images/22.jpg" class="img-fluid rounded" />
+          </div>
+          <div class="col-lg-4 col-md-4 col-12 pb-4">
+            <img src="images/23.jpg" class="img-fluid rounded" />
+          </div>
+          <div class="col-lg-4 col-md-4 col-12 pb-4">
+            <img src="images/24.jpg" class="img-fluid rounded" />
+          </div>
+          <div class="col-lg-4 col-md-4 col-12 pb-4">
+            <img src="images/25.jpg" class="img-fluid rounded" />
+          </div>
+          <div class="col-lg-4 col-md-4 col-12 pb-4">
+            <img src="images/26.jpg" class="img-fluid rounded" />
+          </div>
+          <div class="col-lg-4 col-md-4 col-12 pb-4">
+            <img src="images/27.jpg" class="img-fluid rounded" />
+          </div>
+          <div class="col-lg-4 col-md-4 col-12 pb-4">
+            <img src="images/28.jpg" class="img-fluid rounded" />
+          </div>
+          <div class="col-lg-4 col-md-4 col-12 pb-4">
+            <img src="images/29.jpg" class="img-fluid rounded" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured">
+      <div class="container">
+        <h1 class="text-center py-4">Feature Tours</h1>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card border-0 mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <div class="photo feature-photo">
+                    <img
+                      src="images/nainital.jpg"
+                      class="img-fluid fit-cover"
+                      alt="Place"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body py-5">
+                    <h3 class="card-title">
+                      <a
+                        href="destination/nainital.html"
+                        class="card-link stretched-link"
+                        >Nainital</a
+                      >
+                    </h3>
+                    <div class="card-details">
+                      <i class="fas fa-rupee-sign"></i> <span>6,088</span>
+                    </div>
+                    <div class="card-details">
+                      <i class="fa fa-stars"></i> <span>4.5</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <div class="photo feature-photo">
+                    <img
+                      src="images/manali.jpg"
+                      class="img-fluid fit-cover"
+                      alt="Place"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body py-5">
+                    <h3 class="card-title">
+                      <a
+                        href="destination/manali.html"
+                        class="card-link stretched-link"
+                        >Manali</a
+                      >
+                    </h3>
+                    <div class="card-details">
+                      <i class="fas fa-rupee-sign"></i> <span>8,999</span>
+                    </div>
+                    <div class="card-details">
+                      <i class="fa fa-stars"></i> <span>4.5</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="customers">
+      <div class="container">
+        <h1 class="text-center py-4">What Our Traveller Say About Us</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <div class="profile d-flex justify-content-center pt-4">
+                <img src="images/user1.jpg" alt="reviewer" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center">Shwan Pull</h5>
+                <h6 class="card-subtitle mb-2 text-muted text-center">
+                  Traveller
+                </h6>
+                <p class="card-text text-center">
+                  We had a wonderful time! I highly recommend the Resort at
+                  Longboat Key & the area. It was perfect for not being crowded
+                  on the beach w/ Covid concerns.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="profile d-flex justify-content-center pt-4">
+                <img src="images/user2.jpg" alt="reviewer" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center">Wiley Fallon</h5>
+                <h6 class="card-subtitle mb-2 text-muted text-center">
+                  Traveller
+                </h6>
+                <p class="card-text text-center">
+                  It was a wonderful experience for us. All your arrangements
+                  were up to the mark. All hotels and transportation
+                  arrangements were excellent.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="profile d-flex justify-content-center pt-4">
+                <img src="images/user3.png" alt="reviewer" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center">Arielle Kaufman</h5>
+                <h6 class="card-subtitle mb-2 text-muted text-center">
+                  Traveller
+                </h6>
+                <p class="card-text text-center">
+                  A well planned, varied experience with excellent prior
+                  planning and local knowledge. The local drivers and guides
+                  made us feel welcome.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12">
+            <div class="footer-info">
+              <div class="footer-logo">
+                <h5 class="footer-title">TravelZone</h5>
+              </div>
+              <p>
+                We take pride in handcrafting an experience around your travel
+                preferences, by using our extensive knowledge and research to
+                explore fresh concepts focusing on whatever might interest you.
+              </p>
+              <div class="footer-social-icons">
+                <h5 class="footer-title">Follow Us:</h5>
+                <ul>
+                  <li>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-12">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-7">
+                <div class="footer-links">
+                  <h5 class="footer-title">Contact us</h5>
+                  <div class="contact-box">
+                    <i class="fal fa-phone-alt"></i>
+                    <div>
+                      <a href="tel:+91 10XXXX010101">+91-10XXXX010101</a>
+                    </div>
+                  </div>
+                  <div class="contact-box">
+                    <i class="fal fa-envelope"></i>
+                    <div>
+                      <a href="mailto:contact@example.com"
+                        >contact@example.com</a
+                      >
+                    </div>
+                  </div>
+                  <div class="contact-box">
+                    <i class="fal fa-map-marker-alt"></i>
+                    <span>Uttarakhand, India</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-5">
+                <div class="footer-links">
+                  <h5 class="footer-title">Support</h5>
+                  <div class="category-list">
+                    <ul>
+                      <li><a href="/contact.html">Contact us</a></li>
+                      <li><a href="/about.html">About us</a></li>
+                      <li><a href="/destination.html">Destinations</a></li>
+                      <li><a href="/blogs.html">Our Blogs</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <div class="footer-links payment-links">
+                  <h5 class="footer-title">We Accept:</h5>
+                  <div
+                    class="payment-cards d-flex flex-wrap justify-content-center gap-1"
+                    style="max-width: 150px"
+                  >
+                    <i class="fab fa-cc-visa fa-4x"></i>
+                    <i class="fab fa-cc-stripe fa-4x"></i>
+                    <i class="fab fa-cc-paypal fa-4x"></i>
+                    <i class="fab fa-cc-amex fa-4x"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="copyrigth-area">
+              <p>Copyright 2021 | TravelZone</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
